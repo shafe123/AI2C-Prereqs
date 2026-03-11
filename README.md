@@ -1,10 +1,11 @@
-- [DoD/Army/AI2C Material](#dodarmyai2c-material)
+
 - [Beginner's Reference Material](#beginners-reference-material)
   - [Python References](#python-references)
   - [Linux and Bash References](#linux-and-bash-references)
   - [Git and Github](#git-and-github)
   - [AI/ML](#aiml)
   - [DevOps](#devops)
+- [DoD/Army/AI2C Material](#dodarmyai2c-material)
 
 # Beginner's Reference Material
 
@@ -46,4 +47,5 @@
 - [Coding Katas](https://github.com/afc-ai2c/coding-katas/) (practice small skills)
 - [Digital University](https://digitalu.af.mil/) - free online courses
 - [DCITA](https://www.dcita.edu/) - Cyber Training Academy
+
 
