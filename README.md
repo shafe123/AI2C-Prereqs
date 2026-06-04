@@ -1,3 +1,5 @@
+*** This course has been archived, please see [this repo](https://github.com/AFC-AI2C/summer-course) for the current course content. ***
+
 
 - [Beginner's Reference Material](#beginners-reference-material)
   - [Python References](#python-references)
