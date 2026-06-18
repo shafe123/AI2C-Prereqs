@@ -62,3 +62,4 @@ To test these skills, students analyze a dataset of top-ranking women's concert 
 2. Filter the data for specific artists (e.g., Taylor Swift).
 3. Convert currency strings to floats for calculation.
 4. Perform aggregations to find total and average gross revenues.
+ 
