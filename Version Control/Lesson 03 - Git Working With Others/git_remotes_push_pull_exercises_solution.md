@@ -6,9 +6,20 @@ These exercises walk through working with Git remotes and contributing to shared
 
 ### Exercise 0: Setup Environment
 
-**Goal**: Create a local and remote repository.  
+**Goal**: Create a local and remote repository
 
----
+Do this in your WSL distro for practice on the command line!
+
+1. Create a new folder called `git_example`
+2. Change into the new folder
+3. Create a new file called `first_file.txt` with some text inside
+4. Initialize the git repository
+5. Make your first commit
+
+Do this part in GitHub
+
+1. Create a new repository in GitHub under your personal account.
+2. After you create the repository, take note of the URL provided.  It should look something like `https://github.com/{username}/{repository-name}.git`
 
 ### Exercise 1: Add a Remote Repository
 
@@ -16,7 +27,9 @@ These exercises walk through working with Git remotes and contributing to shared
 
 This step sets up your local repository to "track" the remote repository under the name `origin`.
 
-
+```bash
+git remote add origin {your_url}
+```
 
 ✅ *Check*: Run `git remote -v` to verify the remote is added.
 
@@ -26,6 +39,9 @@ This step sets up your local repository to "track" the remote repository under t
 
 **Goal**: Push local commits to the remote repository.
 
+```bash
+git push -u origin main
+```
 
 ✅ *Check*: Visit the GitHub repo and confirm your code appears.
 
@@ -49,6 +65,20 @@ Before closing the screen, copy the token, and use it as your password!
 
 Two options:
 
+Option 1
+1. Use the online GitHub editor to make changes to your text file.
+2. Then pull the changes using the command below.
+
+Option 2
+1. Give a friend modify rights to your repository in GitHub.
+2. Have them clone, make changes, commit, and push their changes to your repository.
+3. Then pull their changes using the command below.
+
+
+
+```bash
+git pull origin main
+```
 
 ✅ *Check*: Git should update your local files if there are changes on GitHub.
 
@@ -71,6 +101,10 @@ Two options:
 
 **Goal**: Work on your forked copy locally.
 
+```bash
+git clone https://github.com/{YOUR_USERNAME}/Spoon-Knife.git
+cd Spoon-Knife
+```
 
 ✅ *Check*: You now have a local copy of the forked repo.
 
@@ -80,6 +114,13 @@ Two options:
 
 **Goal**: Make a change and push it to your GitHub fork.
 
+Example:
+```bash
+echo "This is my name!" >> {my name}.md
+git add {my name}.md
+git commit -m "Added a file from me"
+git push origin main
+```
 
 ✅ *Check*: Confirm the change is visible in your GitHub fork.
 
@@ -89,6 +130,10 @@ Two options:
 
 **Goal**: Submit your change back to the original repository.
 
+1. Go to your fork on GitHub.
+2. Click "Contribute" > "Open pull request".
+3. Add a title and description, then click **Create pull request**.
+
 ✅ *Check*: Your pull request should now appear in the original repo’s list of PRs.
 
 ---
@@ -97,6 +142,11 @@ Two options:
 
 **Goal**: Keep your fork in sync with the original repository.
 
+```bash
+git remote add upstream https://github.com/shafe123/Spoon-Knife.git
+git fetch upstream
+git merge upstream/main
+```
 
 ✅ *Check*: You can now pull updates from the original repo into your fork.
 
