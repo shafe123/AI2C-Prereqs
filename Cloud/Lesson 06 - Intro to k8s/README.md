@@ -67,8 +67,13 @@ Node components run on every node, maintaining running pods and providing the Ku
 
 ## 🗺️ Kubernetes Roadmap
 
-1. **Containerize** your application.
-2. **Host** your container in a registry.
-3. **Install** Kubernetes (or use a managed service).
-4. **Create** your first Pod.
-5. **Expose** your Pod to the world.
+1. **Containerize your application** - Create a Dockerfile and build a Docker image
+2. **Host your container** - Push your image to a container registry (Docker Hub)
+3. **Install Kubernetes** - Set up a local cluster using minikube
+4. **Create your first Pod** - Deploy your application using Deployments
+5. **Expose your Pod to the world** - Create a Service to make your app accessible
+
+# Optional Intermediate Tutorials
+
+6. **Explore and troubleshoot** - Learn debugging techniques with kubectl *(optional)*
+7. **Scale your application** - Run multiple replicas for high availability *(optional)*
